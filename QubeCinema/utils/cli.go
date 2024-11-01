@@ -1,4 +1,3 @@
-// utils/cli.go
 package utils
 
 import (
@@ -9,6 +8,7 @@ import (
 )
 
 func InitDistributors() {
+	// adding pre loaded distributors
 	distributor1 := &models.Distributor{Name: "DISTRIBUTOR1"}
 	distributor2 := &models.Distributor{Name: "DISTRIBUTOR2", Parent: distributor1}
 
@@ -24,6 +24,7 @@ func InitDistributors() {
 func DisplayMenu() {
 	var choice int
 	for {
+		//cli
 		fmt.Println("\n1: Query Distributor")
 		fmt.Println("2: Assign Permissions")
 		fmt.Println("3: List Distributors")

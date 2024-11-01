@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	//loading csv file
 	if err := repository.LoadCSV("D:/cities.csv"); err != nil {
 		fmt.Println("Error loading locations:", err)
 		return
